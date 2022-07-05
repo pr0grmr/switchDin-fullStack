@@ -77,6 +77,6 @@ subscriber_one.connect(brokerAddress)
 # Subscribing to Topic
 subscriber_one.subscribe("switchDin/randomNumber")
 
-# Run Scheduler and Client Loop
+# Run Client Loop
 while True:
     subscriber_one.loop()
