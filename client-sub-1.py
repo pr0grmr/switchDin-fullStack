@@ -62,8 +62,6 @@ def on_message(client, userdata, message):
         + str(datetime.now())
     )
 
-    # Casting message to int and appending to Lists for calculating averages
-
 
 # Creating a Client instance
 subscriber_one = mqtt.Client("subscriber_one")
