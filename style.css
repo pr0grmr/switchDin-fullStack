@@ -1,0 +1,25 @@
+.animation,
+.tableContainer,
+.heading {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+table {
+    margin: 25px 0;
+    width: 200px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
