@@ -49,7 +49,7 @@ def randomNumberPublisher(client):
     randomNumber = rd.randint(1, 100)
 
     # Generates a random interval between 1 and 30 (Seconds)
-    randomInterval = rd.randint(1, 2)
+    randomInterval = rd.randint(1, 30)
 
     # Published random number to a topic to the broker
     client.publish("switchDin/randomNumber", randomNumber)

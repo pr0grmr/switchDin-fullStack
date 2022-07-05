@@ -1,13 +1,48 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>SwitchDin Skills Test</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
-    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>SwitchDin Skills Test - Connecting to Broker and Animating</h1>
+
+    <div class="heading">
+        <h1>SwitchDin Skills Test </h1>
+    </div>
+
+    <div class="animation">
+        <svg width="400" height="110">
+            <rect id="animate" width="0" height="100"
+                style="fill:rgb(255, 240, 191);stroke-width:3;stroke:rgb(0,0,0)" />
+        </svg>
+    </div>
+
+    <div class="tableContainer">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+
     <script>brokerConnect();</script>
 </body>
 

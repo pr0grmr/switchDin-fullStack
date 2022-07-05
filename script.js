@@ -20,8 +20,10 @@ function onConnectionLost(responseObject) {
 
 // CallBack function when client recieves a message from broker
 function onMessageArrived(message) {
-    console.log("onMessageArrived:" + message.payloadString);
-    randomNumber = parseInt(message.payloadString)
+    console.log("Number Recieved:" + message.payloadString);
+    randomNumber = JSON.parse(message.payloadString)
+    createAnimation(parseInt(randomNumber))
+    addToTable(parseInt(randomNumber))
 }
 
 // Function to connect to the broker
@@ -39,6 +41,21 @@ function brokerConnect() {
 
 }
 
-function createAnimation() {
+// Funciton to create animation usinig velocityJS
+function createAnimation(size) {
+    $("#animate").velocity({ height: 100, width: size });
+}
 
+// Function to add value to history table : Source: https://www.geeksforgeeks.org/how-to-add-table-row-in-a-table-using-jquery/
+function addToTable(size) {
+    let currentTime = new Date().toLocaleString()
+    $(document).ready(function () {
+
+        markup = "<tr><td>"
+            + currentTime + "</td><td>" + size + "</td></tr>";
+        tableBody = $("table tbody");
+        tableBody.append(markup);
+
+
+    });
 }
