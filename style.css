@@ -1,6 +1,7 @@
 .animation,
 .tableContainer,
-.heading {
+.heading,
+.svg {
     justify-content: center;
     text-align: center;
     display: flex;

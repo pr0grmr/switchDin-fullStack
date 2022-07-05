@@ -43,7 +43,7 @@ function brokerConnect() {
 
 // Funciton to create animation usinig velocityJS
 function createAnimation(size) {
-    $("#animate").velocity({ height: 100, width: size });
+    $("#animate").velocity({ width: 100, height: size });
 }
 
 // Function to add value to history table : Source: https://www.geeksforgeeks.org/how-to-add-table-row-in-a-table-using-jquery/
