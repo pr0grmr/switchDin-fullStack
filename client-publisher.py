@@ -8,7 +8,7 @@ import paho.mqtt.client as mqtt
 import random as rd
 import time
 
-# MQTT Broker's Address (Local Host - Mosquitto Installed on Local Machine)
+# MQTT Broker's Address
 brokerAddress = "broker.hivemq.com"
 
 
