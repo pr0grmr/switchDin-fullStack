@@ -15,7 +15,7 @@ Repository to hold SwitchDin Skills Test | Implementation of a MQTT Publish Subs
 
  `client-sub-1.py` : This MQTT Client connects to the broker and retrieves the message sent on topic `switchDin/randomNumber` and then prints it out with a microsecond accurate timestamp.
   
-  `index.html` : The HTML file for the Client which displays a SVG rectangle whose size is animated based on the random number received from the broker. 
+  `index.html` : The HTML file for the Client which displays a SVG rectangle whose height is animated based on the random number received from the broker. 
 
 `script.js` : The JavaScript function which is used to connect to the MQTT broker and animates a SVG rectangle in the DOM using velocityJS. Also, keeps history of all incoming values using timestamp (Appended to DOM using jQuery)
 
